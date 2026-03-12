@@ -69,7 +69,7 @@ WinDock hooks into your existing macOS Dock via the Accessibility API and adds W
   <img src="assets/windock.gif" alt="WinDock demo" width="720"/>
 </p>
 
-[![Download WinDock](https://img.shields.io/badge/Download-WinDock_v1.1.0-007AFF?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/akinalpfdn/windock/releases/latest/download/WinDock.dmg)
+[![Download WinDock](https://img.shields.io/badge/Download-WinDock_v1.1.0-007AFF?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/akinalpfdn/windock/releases/latest/download/WinDock-1.2.0.dmg)
 
 [📦 Repository](https://github.com/akinalpfdn/windock) · [📋 Releases](https://github.com/akinalpfdn/windock/releases)
 
@@ -87,7 +87,7 @@ macOS `⌘ Tab` switches apps, not windows. Tabi fixes that. Full-screen picker 
   <img src="assets/tabi.gif" alt="Tabi demo" width="720"/>
 </p>
 
-[![Download Tabi](https://img.shields.io/badge/Download-Tabi_v1.0.0-007AFF?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/akinalpfdn/Tabi/releases/latest/download/Tabi-1.0.0.dmg)
+[![Download Tabi](https://img.shields.io/badge/Download-Tabi_v1.0.0-007AFF?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/akinalpfdn/Tabi/releases/latest/download/Tabi-1.1.0.dmg)
 
 [📦 Repository](https://github.com/akinalpfdn/Tabi) · [📋 Releases](https://github.com/akinalpfdn/Tabi/releases)
 
