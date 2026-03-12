@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/macos-toolkit-banner.png" alt="macOS Toolkit" width="600"/>
+  <img src="assets/macos-toolkit-banner.svg" alt="macOS Toolkit" width="600"/>
 </p>
 
 <h1 align="center">macOS Toolkit</h1>
