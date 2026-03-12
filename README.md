@@ -65,6 +65,10 @@ WinDock hooks into your existing macOS Dock via the Accessibility API and adds W
 
 **Highlights:** Live thumbnails via ScreenCaptureKit · Click-to-focus · Aero Peek · Close from preview · Launch at login
 
+<p align="center">
+  <img src="assets/windock.gif" alt="WinDock demo" width="720"/>
+</p>
+
 [![Download WinDock](https://img.shields.io/badge/Download-WinDock_v1.1.0-007AFF?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/akinalpfdn/windock/releases/latest/download/WinDock.dmg)
 
 [📦 Repository](https://github.com/akinalpfdn/windock) · [📋 Releases](https://github.com/akinalpfdn/windock/releases)
@@ -79,6 +83,10 @@ macOS `⌘ Tab` switches apps, not windows. Tabi fixes that. Full-screen picker 
 
 **Highlights:** `⌥ Tab` to switch · Live window thumbnails · Works across all apps · Zero UI chrome
 
+<p align="center">
+  <img src="assets/tabi.gif" alt="Tabi demo" width="720"/>
+</p>
+
 [![Download Tabi](https://img.shields.io/badge/Download-Tabi_v1.0.0-007AFF?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/akinalpfdn/Tabi/releases/latest/download/Tabi-1.0.0.dmg)
 
 [📦 Repository](https://github.com/akinalpfdn/Tabi) · [📋 Releases](https://github.com/akinalpfdn/Tabi/releases)
@@ -92,6 +100,10 @@ macOS `⌘ Tab` switches apps, not windows. Tabi fixes that. Full-screen picker 
 A silent clipboard history that runs in the background with no dock icon and no menu bar clutter. Search through history, paste directly into apps, and let it remember everything between restarts.
 
 **Highlights:** Text + image history · Custom hotkey · Search · Smart paste · Persistent storage
+
+<p align="center">
+  <img src="assets/clibi.gif" alt="Clibi demo" width="720"/>
+</p>
 
 [![Download Clibi](https://img.shields.io/badge/Download-Clibi_v1.0.0-007AFF?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/akinalpfdn/Clibi/releases/latest)
 
@@ -144,7 +156,7 @@ git submodule update --init --recursive
 ```
 macos-toolkit/
 ├── README.md
-├── assets/              # Banner and shared assets
+├── assets/              # Banner, demo GIFs, shared assets
 ├── windock/             # → github.com/akinalpfdn/windock
 ├── Tabi/                # → github.com/akinalpfdn/Tabi
 ├── Clibi/               # → github.com/akinalpfdn/Clibi
