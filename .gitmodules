@@ -1,0 +1,12 @@
+[submodule "windock"]
+	path = windock
+	url = https://github.com/akinalpfdn/windock.git
+[submodule "Tabi"]
+	path = Tabi
+	url = https://github.com/akinalpfdn/Tabi.git
+[submodule "Clibi"]
+	path = Clibi
+	url = https://github.com/akinalpfdn/Clibi.git
+[submodule "MovApp"]
+	path = MovApp
+	url = https://github.com/akinalpfdn/MovApp.git
