@@ -13,39 +13,46 @@
   <img src="https://img.shields.io/badge/Swift-5.9+-orange?logo=swift&logoColor=white" alt="Swift"/>
   <img src="https://img.shields.io/badge/macOS-14.0+-blue?logo=apple&logoColor=white" alt="macOS"/>
   <img src="https://img.shields.io/badge/License-MIT-green" alt="MIT"/>
-  <img src="https://img.shields.io/badge/Apps-4-purple" alt="Apps"/>
+  <img src="https://img.shields.io/badge/Apps-5-purple" alt="Apps"/>
 </p>
 
 ---
 
 ## The Suite
 
-Four focused tools that fill the gaps Apple left in macOS.
+Five focused tools that fill the gaps Apple left in macOS.
 
 <table>
   <tr>
-    <td align="center" width="25%">
+    <td align="center" width="20%">
+      <a href="https://github.com/akinalpfdn/Dropi">
+        <img src="https://raw.githubusercontent.com/akinalpfdn/Dropi/main/Assets/dropi_icon_256x256.png" width="80"/><br/>
+        <b>Dropi</b>
+      </a><br/>
+      <sub>Drag & drop file shelf</sub>
+    </td>
+    <td align="center" width="20%">
       <a href="https://github.com/akinalpfdn/windock">
         <img src="https://raw.githubusercontent.com/akinalpfdn/windock/main/Assets/windock_icon_256x256.png" width="80"/><br/>
         <b>WinDock</b>
       </a><br/>
       <sub>Windows-style dock previews</sub>
     </td>
-    <td align="center" width="25%">
+    <td align="center" width="20%">
       <a href="https://github.com/akinalpfdn/Tabi">
         <img src="https://raw.githubusercontent.com/akinalpfdn/Tabi/main/Assets/tabi_icon_128x128.png" width="80"/><br/>
         <b>Tabi</b>
       </a><br/>
       <sub>Window-level Alt+Tab switcher</sub>
     </td>
-    <td align="center" width="25%">
+    <td align="center" width="20%">
       <a href="https://github.com/akinalpfdn/Clibi">
         <img src="https://raw.githubusercontent.com/akinalpfdn/Clibi/main/Assets/clipboard_icon_256x256.png" width="80"/><br/>
         <b>Clibi</b>
       </a><br/>
       <sub>Clipboard history manager</sub>
     </td>
-    <td align="center" width="25%">
+    <td align="center" width="20%">
       <a href="https://github.com/akinalpfdn/MovApp">
         <img src="https://raw.githubusercontent.com/akinalpfdn/MovApp/main/screenshots/grid-view.png" width="80"/><br/>
         <b>MovApp</b>
@@ -54,6 +61,24 @@ Four focused tools that fill the gaps Apple left in macOS.
     </td>
   </tr>
 </table>
+
+---
+
+### Dropi — File Shelf
+
+> Drag files in, drag them out. A lightweight floating shelf for holding files while you navigate.
+
+Dropi gives you a temporary drop zone that floats above your desktop. Drag files onto it while switching between folders, apps, or desktops — then drag them out wherever you need them. No clutter, no complexity.
+
+**Highlights:** Drag & drop shelf · Floating window · Works across desktops · Lightweight
+
+<p align="center">
+  <a href="https://github.com/akinalpfdn/Dropi/releases/latest/download/Dropi.dmg">
+    <img src="assets/btn-macos.svg" alt="Download Dropi" width="200"/>
+  </a>
+</p>
+
+[📦 Repository](https://github.com/akinalpfdn/Dropi) · [📋 Releases](https://github.com/akinalpfdn/Dropi/releases)
 
 ---
 
@@ -69,7 +94,11 @@ WinDock hooks into your existing macOS Dock via the Accessibility API and adds W
   <img src="assets/windock.gif" alt="WinDock demo" width="720"/>
 </p>
 
-[![Download WinDock](https://img.shields.io/badge/Download-WinDock_v1.2.0-007AFF?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/akinalpfdn/windock/releases/latest/download/WinDock-1.2.0.dmg)
+<p align="center">
+  <a href="https://github.com/akinalpfdn/windock/releases/latest/download/WinDock.dmg">
+    <img src="assets/btn-macos.svg" alt="Download WinDock" width="200"/>
+  </a>
+</p>
 
 [📦 Repository](https://github.com/akinalpfdn/windock) · [📋 Releases](https://github.com/akinalpfdn/windock/releases)
 
@@ -87,7 +116,11 @@ macOS `⌘ Tab` switches apps, not windows. Tabi fixes that. Full-screen picker 
   <img src="assets/tabi.gif" alt="Tabi demo" width="720"/>
 </p>
 
-[![Download Tabi](https://img.shields.io/badge/Download-Tabi_v1.2.0-007AFF?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/akinalpfdn/Tabi/releases/latest/download/Tabi-1.1.0.dmg)
+<p align="center">
+  <a href="https://github.com/akinalpfdn/Tabi/releases/latest/download/Tabi-1.1.0.dmg">
+    <img src="assets/btn-macos.svg" alt="Download Tabi" width="200"/>
+  </a>
+</p>
 
 [📦 Repository](https://github.com/akinalpfdn/Tabi) · [📋 Releases](https://github.com/akinalpfdn/Tabi/releases)
 
@@ -105,7 +138,11 @@ A silent clipboard history that runs in the background with no dock icon and no 
   <img src="assets/clibi.gif" alt="Clibi demo" width="720"/>
 </p>
 
-[![Download Clibi](https://img.shields.io/badge/Download-Clibi_v1.1.0-007AFF?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/akinalpfdn/Clibi/releases/latest/download/Clibi-1.1.0.dmg)
+<p align="center">
+  <a href="https://github.com/akinalpfdn/Clibi/releases/latest/download/Clibi-1.1.0.dmg">
+    <img src="assets/btn-macos.svg" alt="Download Clibi" width="200"/>
+  </a>
+</p>
 
 [📦 Repository](https://github.com/akinalpfdn/Clibi) · [📋 Releases](https://github.com/akinalpfdn/Clibi/releases)
 
@@ -119,7 +156,11 @@ Apple removed the classic Launchpad and replaced it with something worse. MovApp
 
 **Highlights:** iOS-style grid · Smart search · Drag & drop reorder · Deep uninstall · Persistent layout
 
-[![Download MovApp](https://img.shields.io/badge/Download-MovApp_v2.0.0-007AFF?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/akinalpfdn/MovApp/releases/latest)
+<p align="center">
+  <a href="https://github.com/akinalpfdn/MovApp/releases/latest">
+    <img src="assets/btn-macos.svg" alt="Download MovApp" width="200"/>
+  </a>
+</p>
 
 [📦 Repository](https://github.com/akinalpfdn/MovApp) · [📋 Releases](https://github.com/akinalpfdn/MovApp/releases)
 
@@ -139,7 +180,7 @@ Every app in this toolkit follows the same principles:
 
 ## Clone with Submodules
 
-This repo includes all four apps as git submodules:
+This repo includes all five apps as git submodules:
 
 ```bash
 git clone --recurse-submodules https://github.com/akinalpfdn/macos-toolkit.git
@@ -157,6 +198,7 @@ git submodule update --init --recursive
 macos-toolkit/
 ├── README.md
 ├── assets/              # Banner, demo GIFs, shared assets
+├── Dropi/               # → github.com/akinalpfdn/Dropi
 ├── windock/             # → github.com/akinalpfdn/windock
 ├── Tabi/                # → github.com/akinalpfdn/Tabi
 ├── Clibi/               # → github.com/akinalpfdn/Clibi

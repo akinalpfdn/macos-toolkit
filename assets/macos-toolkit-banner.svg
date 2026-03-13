@@ -5,13 +5,13 @@
       <stop offset="50%" stop-color="#111128"/>
       <stop offset="100%" stop-color="#0d1117"/>
     </linearGradient>
-    <radialGradient id="glow1" cx="30%" cy="40%" r="40%">
+    <radialGradient id="glow1" cx="25%" cy="40%" r="35%">
       <stop offset="0%" stop-color="#5B9CF5" stop-opacity="0.1"/>
       <stop offset="100%" stop-color="#5B9CF5" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="glow2" cx="75%" cy="60%" r="35%">
-      <stop offset="0%" stop-color="#F5A623" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#F5A623" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="iconBg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#141414"/>
@@ -29,6 +29,10 @@
       <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.12"/>
       <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
     </radialGradient>
+    <radialGradient id="dropiGlow" cx="0.5" cy="0.5" r="0.45">
+      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0"/>
+    </radialGradient>
     <filter id="noise">
       <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
       <feColorMatrix type="saturate" values="0"/>
@@ -37,11 +41,12 @@
       <feComposite in2="SourceGraphic" operator="in"/>
     </filter>
     <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="130%">
-      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.5"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.5"/>
     </filter>
     <linearGradient id="topLine" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#5B9CF5"/>
-      <stop offset="50%" stop-color="#F5A623"/>
+      <stop offset="33%" stop-color="#F5A623"/>
+      <stop offset="66%" stop-color="#A78BFA"/>
       <stop offset="100%" stop-color="#5B9CF5"/>
     </linearGradient>
   </defs>
@@ -57,9 +62,10 @@
     <line x1="0" y1="100" x2="1200" y2="100"/>
     <line x1="0" y1="200" x2="1200" y2="200"/>
     <line x1="0" y1="300" x2="1200" y2="300"/>
-    <line x1="300" y1="0" x2="300" y2="400"/>
-    <line x1="600" y1="0" x2="600" y2="400"/>
-    <line x1="900" y1="0" x2="900" y2="400"/>
+    <line x1="240" y1="0" x2="240" y2="400"/>
+    <line x1="480" y1="0" x2="480" y2="400"/>
+    <line x1="720" y1="0" x2="720" y2="400"/>
+    <line x1="960" y1="0" x2="960" y2="400"/>
   </g>
 
   <!-- Top accent line -->
@@ -70,19 +76,20 @@
   <text x="600" y="108" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif" font-size="14" fill="#8E8E93" letter-spacing="4">PURE SWIFT · LIGHTWEIGHT · OPEN SOURCE</text>
 
   <!-- Separator -->
-  <line x1="460" y1="128" x2="740" y2="128" stroke="#333" stroke-width="1" opacity="0.4"/>
+  <line x1="440" y1="128" x2="760" y2="128" stroke="#333" stroke-width="1" opacity="0.4"/>
 
   <!--
-    Card layout:
-    - Card rect: x=-10, width=210 → inner 0..190, center=95
-    - Icon: 72x72 (scale 0.0703125 * 1024 = 72), so translate x = 95-36 = 59
-    - Text: text-anchor middle at x=95
+    5 cards layout: 1200px wide
+    Card width: 175px (inner), with 210 total including padding
+    Gap between cards: ~22px
+    Total: 5*175 + 4*22 + margins = nicely centered
+    Positions: 72, 286, 500, 714, 928 (card left edges including -10 offset)
   -->
 
   <!-- ========== WINDOCK ========== -->
-  <g transform="translate(110, 155)" filter="url(#cardShadow)">
-    <rect x="-10" y="-10" width="210" height="230" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-    <g transform="translate(59, 8) scale(0.0703125)">
+  <g transform="translate(72, 155)" filter="url(#cardShadow)">
+    <rect x="-10" y="-10" width="195" height="225" rx="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <g transform="translate(51.5, 8) scale(0.0664)">
       <rect x="32" y="32" width="960" height="960" rx="192" ry="192" fill="url(#iconBg)"/>
       <rect x="32" y="32" width="960" height="960" rx="192" ry="192" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.08"/>
       <rect x="192" y="160" width="640" height="480" rx="24" fill="#FFFFFF" opacity="0.03"/>
@@ -106,14 +113,14 @@
       <rect x="658" y="786" width="48" height="48" rx="10" fill="#E0E0E0" opacity="0.1"/>
       <circle cx="536" cy="846" r="5" fill="#E0E0E0" opacity="0.6"/>
     </g>
-    <text x="95" y="115" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="16" font-weight="600" fill="#fff">WinDock</text>
-    <text x="95" y="135" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11" fill="#8E8E93">Dock Previews</text>
+    <text x="87.5" y="112" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="15" font-weight="600" fill="#fff">WinDock</text>
+    <text x="87.5" y="130" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="10.5" fill="#8E8E93">Dock Previews</text>
   </g>
 
   <!-- ========== TABI ========== -->
-  <g transform="translate(370, 155)" filter="url(#cardShadow)">
-    <rect x="-10" y="-10" width="210" height="230" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-    <g transform="translate(59, 8) scale(0.0703125)">
+  <g transform="translate(286, 155)" filter="url(#cardShadow)">
+    <rect x="-10" y="-10" width="195" height="225" rx="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <g transform="translate(51.5, 8) scale(0.0664)">
       <rect x="32" y="32" width="960" height="960" rx="192" ry="192" fill="url(#iconBg)"/>
       <rect x="32" y="32" width="960" height="960" rx="192" ry="192" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.08"/>
       <rect x="108" y="310" width="808" height="404" rx="32" fill="#FFFFFF" opacity="0.03"/>
@@ -135,14 +142,14 @@
       <circle cx="556" cy="668" r="9" fill="#E0E0E0" opacity="0.1"/>
       <rect x="108" y="310" width="808" height="404" rx="32" fill="url(#tabiGlow)"/>
     </g>
-    <text x="95" y="115" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="16" font-weight="600" fill="#fff">Tabi</text>
-    <text x="95" y="135" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11" fill="#8E8E93">Window Switcher</text>
+    <text x="87.5" y="112" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="15" font-weight="600" fill="#fff">Tabi</text>
+    <text x="87.5" y="130" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="10.5" fill="#8E8E93">Window Switcher</text>
   </g>
 
   <!-- ========== CLIBI ========== -->
-  <g transform="translate(630, 155)" filter="url(#cardShadow)">
-    <rect x="-10" y="-10" width="210" height="230" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-    <g transform="translate(59, 8) scale(0.0703125)">
+  <g transform="translate(500, 155)" filter="url(#cardShadow)">
+    <rect x="-10" y="-10" width="195" height="225" rx="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <g transform="translate(51.5, 8) scale(0.0664)">
       <rect x="32" y="32" width="960" height="960" rx="192" ry="192" fill="url(#iconBg)"/>
       <rect x="32" y="32" width="960" height="960" rx="192" ry="192" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.08"/>
       <rect x="252" y="200" width="520" height="640" rx="28" fill="#FFFFFF" opacity="0.03"/>
@@ -162,17 +169,58 @@
       <rect x="744" y="290" width="6" height="120" rx="3" fill="#5B9CF5" opacity="0.3"/>
       <rect x="252" y="200" width="520" height="640" rx="28" fill="url(#clibiGlow)"/>
     </g>
-    <text x="95" y="115" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="16" font-weight="600" fill="#fff">Clibi</text>
-    <text x="95" y="135" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11" fill="#8E8E93">Clipboard Manager</text>
+    <text x="87.5" y="112" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="15" font-weight="600" fill="#fff">Clibi</text>
+    <text x="87.5" y="130" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="10.5" fill="#8E8E93">Clipboard Manager</text>
+  </g>
+
+  <!-- ========== DROPI ========== -->
+  <g transform="translate(714, 155)" filter="url(#cardShadow)">
+    <rect x="-10" y="-10" width="195" height="225" rx="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <g transform="translate(51.5, 8) scale(0.0664)">
+      <rect x="32" y="32" width="960" height="960" rx="192" ry="192" fill="url(#iconBg)"/>
+      <rect x="32" y="32" width="960" height="960" rx="192" ry="192" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.08"/>
+      <!-- Shelf -->
+      <rect x="192" y="192" width="640" height="640" rx="36" fill="#A78BFA" opacity="0.03"/>
+      <rect x="192" y="192" width="640" height="640" rx="36" fill="none" stroke="#A78BFA" stroke-width="6" opacity="0.35"/>
+      <!-- Stacked files -->
+      <g transform="rotate(-12, 512, 512)" opacity="0.15">
+        <rect x="332" y="280" width="360" height="460" rx="16" fill="none" stroke="#E0E0E0" stroke-width="5"/>
+      </g>
+      <g transform="rotate(8, 512, 512)" opacity="0.2">
+        <rect x="332" y="280" width="360" height="460" rx="16" fill="none" stroke="#E0E0E0" stroke-width="5"/>
+      </g>
+      <g transform="rotate(-5, 512, 500)" opacity="0.3">
+        <rect x="332" y="280" width="360" height="460" rx="16" fill="none" stroke="#E0E0E0" stroke-width="5"/>
+      </g>
+      <g transform="rotate(2.5, 512, 510)" opacity="0.5">
+        <rect x="332" y="280" width="360" height="460" rx="16" fill="#0D0D0D"/>
+        <rect x="332" y="280" width="360" height="460" rx="16" fill="none" stroke="#E0E0E0" stroke-width="5"/>
+        <line x1="368" y1="346" x2="560" y2="346" stroke="#E0E0E0" stroke-width="6" stroke-linecap="round" opacity="0.25"/>
+        <line x1="368" y1="374" x2="500" y2="374" stroke="#E0E0E0" stroke-width="6" stroke-linecap="round" opacity="0.15"/>
+      </g>
+      <!-- Front file (purple accent) -->
+      <rect x="332" y="280" width="360" height="460" rx="16" fill="#0D0D0D"/>
+      <rect x="332" y="280" width="360" height="460" rx="16" fill="#A78BFA" opacity="0.04"/>
+      <rect x="332" y="280" width="360" height="460" rx="16" fill="none" stroke="#A78BFA" stroke-width="6" opacity="0.55"/>
+      <path d="M 632 280 L 632 324 L 692 324" fill="none" stroke="#A78BFA" stroke-width="4" opacity="0.4"/>
+      <line x1="370" y1="348" x2="580" y2="348" stroke="#E0E0E0" stroke-width="7" stroke-linecap="round" opacity="0.5"/>
+      <line x1="370" y1="378" x2="520" y2="378" stroke="#E0E0E0" stroke-width="7" stroke-linecap="round" opacity="0.3"/>
+      <line x1="370" y1="408" x2="550" y2="408" stroke="#E0E0E0" stroke-width="7" stroke-linecap="round" opacity="0.2"/>
+      <!-- Drop arrow -->
+      <line x1="512" y1="120" x2="512" y2="168" stroke="#A78BFA" stroke-width="6" stroke-linecap="round" opacity="0.3"/>
+      <polyline points="492,154 512,176 532,154" fill="none" stroke="#A78BFA" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.3"/>
+      <rect x="192" y="192" width="640" height="640" rx="36" fill="url(#dropiGlow)"/>
+    </g>
+    <text x="87.5" y="112" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="15" font-weight="600" fill="#fff">Dropi</text>
+    <text x="87.5" y="130" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="10.5" fill="#8E8E93">Drag &amp; Drop Shelf</text>
   </g>
 
   <!-- ========== MOVAPP ========== -->
-  <g transform="translate(890, 155)" filter="url(#cardShadow)">
-    <rect x="-10" y="-10" width="210" height="230" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-    <g transform="translate(59, 8) scale(0.0703125)">
+  <g transform="translate(928, 155)" filter="url(#cardShadow)">
+    <rect x="-10" y="-10" width="195" height="225" rx="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <g transform="translate(51.5, 8) scale(0.0664)">
       <rect x="32" y="32" width="960" height="960" rx="192" ry="192" fill="url(#iconBg)"/>
       <rect x="32" y="32" width="960" height="960" rx="192" ry="192" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.08"/>
-      <!-- 4x4 colorful grid -->
       <rect x="212" y="200" width="120" height="120" rx="28" fill="#FF3B30" opacity="0.7"/>
       <rect x="372" y="200" width="120" height="120" rx="28" fill="#FF9500" opacity="0.7"/>
       <rect x="532" y="200" width="120" height="120" rx="28" fill="#FFCC00" opacity="0.7"/>
@@ -193,12 +241,12 @@
       <circle cx="512" cy="860" r="9" fill="#FFFFFF" opacity="0.15"/>
       <circle cx="552" cy="860" r="9" fill="#FFFFFF" opacity="0.1"/>
     </g>
-    <text x="95" y="115" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="16" font-weight="600" fill="#fff">MovApp</text>
-    <text x="95" y="135" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11" fill="#8E8E93">Launchpad Alt</text>
+    <text x="87.5" y="112" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="15" font-weight="600" fill="#fff">MovApp</text>
+    <text x="87.5" y="130" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="10.5" fill="#8E8E93">Launchpad Alt</text>
   </g>
 
   <!-- Bottom accent -->
   <rect x="0" y="398" width="1200" height="2" fill="url(#topLine)" opacity="0.3"/>
   <circle cx="50" cy="50" r="80" fill="#5B9CF5" opacity="0.02"/>
-  <circle cx="1150" cy="350" r="100" fill="#F5A623" opacity="0.02"/>
+  <circle cx="1150" cy="350" r="100" fill="#A78BFA" opacity="0.02"/>
 </svg>
