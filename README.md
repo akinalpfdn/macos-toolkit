@@ -12,7 +12,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Swift-5.9+-orange?logo=swift&logoColor=white" alt="Swift"/>
   <img src="https://img.shields.io/badge/macOS-14.0+-blue?logo=apple&logoColor=white" alt="macOS"/>
-  <img src="https://img.shields.io/badge/License-MIT-green" alt="MIT"/>
+  <img src="https://img.shields.io/badge/License-GPL--3.0-green" alt="GPL-3.0"/>
   <img src="https://img.shields.io/badge/Apps-5-purple" alt="Apps"/>
 </p>
 
@@ -223,7 +223,7 @@ All apps require **Accessibility** permission. WinDock and Tabi also require **S
 
 ## License
 
-All apps are released under the **MIT License**. See individual repositories for details.
+All apps are released under the **GNU General Public License v3.0**. See individual repositories for details.
 
 ---
 
