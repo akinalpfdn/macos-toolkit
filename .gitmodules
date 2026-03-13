@@ -10,3 +10,6 @@
 [submodule "MovApp"]
 	path = MovApp
 	url = https://github.com/akinalpfdn/MovApp.git
+[submodule "Dropi"]
+	path = Dropi
+	url = https://github.com/akinalpfdn/Dropi.git
